@@ -1,0 +1,4 @@
+import { Headphones, Router, ShieldCheck, Zap } from "lucide-react";
+const benefits = [[Zap, "Fast Internet"], [Router, "Router Options"], [ShieldCheck, "Installation Support"], [Headphones, "Customer Assistance"]] as const;
+export function BenefitStrip() { return <section className="border-b border-[#e5e7eb] bg-white"><div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-y divide-[#e5e7eb] px-5 sm:grid-cols-4 sm:divide-y-0 lg:px-8">{benefits.map(([Icon, label]) => <div key={label} className="flex items-center gap-3 px-3 py-5 sm:justify-center sm:px-4"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eaf8f0] text-[#00a651]"><Icon size={17} /></span><span className="text-xs font-bold text-[#344054] sm:text-sm">{label}</span></div>)}</div></section>; }
+
