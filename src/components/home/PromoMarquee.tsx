@@ -1,11 +1,5 @@
 import Image from "next/image";
-
-const fiveGPackages = [
-  ["15 Mbps", "2,999"],
-  ["50 Mbps", "4,000"],
-  ["100 Mbps", "5,000"],
-  ["250 Mbps", "10,000"],
-] as const;
+import { fiveGPackages } from "@/lib/packages";
 
 function FiveGProductCard() {
   return <div className="promo-product-card">
@@ -19,7 +13,7 @@ function SpeedCard({ speed, price }: { speed: string; price: string }) {
 }
 
 function PackageSet() {
-  return <div className="promo-marquee-set">{fiveGPackages.map(([speed, price]) => <SpeedCard key={speed} speed={speed} price={price} />)}</div>;
+  return <div className="promo-marquee-set">{fiveGPackages.map(({ speed, price }) => <SpeedCard key={speed} speed={speed} price={price} />)}</div>;
 }
 
 export function PromoMarquee() {

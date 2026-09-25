@@ -80,3 +80,70 @@ main > section:nth-child(7) { background: linear-gradient(115deg, var(--green-da
 @keyframes fibre-marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .fibre-marquee-viewport { overflow-x: auto; scroll-snap-type: x mandatory; } .fibre-marquee-track { animation: none; } .fibre-marquee-card { scroll-snap-align: start; } }
 @media (max-width: 639px) { .fibre-marquee-set { gap: 12px; padding-right: 12px; } .fibre-marquee-card { width: 270px; min-height: 282px; } .fibre-card-speed { font-size: 31px; } .fibre-card-benefits { padding-inline: 15px; } }
+.packages-page, .options-page { background: var(--surface); }
+.packages-page-hero, .options-hero { background: linear-gradient(135deg, var(--mint-50), var(--mint-100)); }
+.packages-page-section, .options-content { background: var(--surface); }
+.packages-page-5g, .options-dark { background: var(--green-deep); }
+.packages-page-cta, .options-final-cta { background: linear-gradient(115deg, var(--green-dark), var(--green-primary) 55%, var(--green-bright)); }
+.package-fibre-card { display: flex; min-height: 430px; flex-direction: column; overflow: hidden; border-radius: 18px; color: white; box-shadow: 0 15px 35px rgba(6, 93, 53, .12); }
+.package-plan-name, .package-plan-speed, .package-plan-price { display: flex; align-items: center; justify-content: center; }
+.package-plan-name { min-height: 52px; font-size: 15px; font-weight: 900; letter-spacing: .14em; }
+.package-plan-speed { min-height: 82px; font-size: 38px; font-weight: 950; letter-spacing: -.06em; }
+.package-plan-price { min-height: 70px; gap: 7px; }
+.package-plan-price span { font-size: 14px; font-weight: 800; }
+.package-plan-price strong { font-size: 31px; font-weight: 950; letter-spacing: -.05em; }
+.package-plan-price small { align-self: flex-end; margin-bottom: 19px; font-size: 11px; font-weight: 700; opacity: .8; }
+.package-fibre-card ul { display: grid; flex: 1; gap: 10px; margin: 0; padding: 19px; list-style: none; background: rgba(17, 24, 39, .25); }
+.package-fibre-card li { display: flex; align-items: flex-start; gap: 8px; color: rgba(255,255,255,.96); font-size: 13px; font-weight: 600; line-height: 1.45; }
+.package-fibre-card li svg { flex: 0 0 auto; margin-top: 2px; }
+.package-plan-link, .package-5g-link { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px; margin: 0 14px 14px; border-radius: 11px; background: white; color: var(--green-dark); font-size: 13px; font-weight: 900; transition: background-color .2s; }
+.package-plan-link:hover, .package-5g-link:hover { background: var(--mint-100); }
+.package-fibre-bronze .package-plan-name { background: #b96720; } .package-fibre-bronze .package-plan-speed { background: #75400e; } .package-fibre-bronze .package-plan-price { background: #a85b1c; } .package-fibre-bronze ul { background: #75400e; }
+.package-fibre-silver .package-plan-name { background: #bdbdbd; } .package-fibre-silver .package-plan-speed { background: #808080; } .package-fibre-silver .package-plan-price { background: #969696; } .package-fibre-silver ul { background: #5e6265; }
+.package-fibre-gold .package-plan-name { background: #ff9818; } .package-fibre-gold .package-plan-speed { background: #d96d00; } .package-fibre-gold .package-plan-price { background: #f28a0a; } .package-fibre-gold ul { background: #b85d00; }
+.package-fibre-diamond .package-plan-name { background: #27b9e9; } .package-fibre-diamond .package-plan-speed { background: #087aa7; } .package-fibre-diamond .package-plan-price { background: #21aeda; } .package-fibre-diamond ul { background: #087aa7; }
+.package-5g-card { display: flex; min-height: 240px; flex-direction: column; overflow: hidden; border-radius: 16px; background: #063d29; box-shadow: 0 15px 35px rgba(0, 0, 0, .16); }
+.package-5g-card .promo-speed { min-height: 58px; font-size: 22px; }
+.package-5g-card .promo-price { min-height: 72px; }
+.package-5g-card .promo-price strong { font-size: 31px; }
+.package-5g-card p { flex: 1; margin: 0; padding: 16px; color: rgba(255,255,255,.78); font-size: 12px; font-weight: 600; line-height: 1.45; }
+.package-5g-link { margin-top: 0; }
+.options-explanation { display: grid; gap: 32px; align-items: center; }
+.options-eyebrow { color: var(--green-primary); font-size: 12px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+.options-explanation h2, .options-router h2 { margin-top: 12px; color: #111827; font-size: clamp(30px, 4vw, 46px); font-weight: 900; letter-spacing: -.05em; }
+.options-dark .options-explanation h2, .options-dark .options-eyebrow { color: white; }
+.options-explanation p:not(.options-eyebrow), .options-router p:not(.options-eyebrow) { margin-top: 18px; max-width: 620px; color: var(--text-secondary); font-size: 16px; line-height: 1.8; }
+.options-dark .options-explanation p:not(.options-eyebrow) { color: rgba(255,255,255,.7); }
+.options-diagram { overflow-x: auto; border: 1px solid var(--border-green); border-radius: 18px; background: white; padding: 18px; }
+.options-dark .options-diagram { border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.06); }
+.options-flow { display: flex; min-width: 560px; align-items: center; gap: 10px; }
+.options-flow-node { display: flex; min-width: 94px; flex: 1; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.options-flow-icon { display: flex; height: 42px; width: 42px; align-items: center; justify-content: center; border-radius: 13px; background: var(--mint-100); color: var(--green-dark); }
+.options-dark .options-flow-icon { background: rgba(140,224,175,.15); color: #8ce0af; }
+.options-flow-node span { color: #344054; font-size: 11px; font-weight: 800; line-height: 1.3; }
+.options-dark .options-flow-node span { color: rgba(255,255,255,.8); }
+.options-flow-arrow { flex: 0 0 auto; color: var(--green-primary); }
+.options-note { border: 1px solid var(--border-green); border-radius: 16px; background: rgba(255,255,255,.75); padding: 24px; }
+.options-dark .options-note { border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.06); }
+.options-note h3 { color: #111827; font-size: 16px; font-weight: 900; text-transform: uppercase; }
+.options-dark .options-note h3 { color: white; }
+.options-note ul, .options-fit-card ul { display: grid; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
+.options-note li, .options-fit-card li { display: flex; gap: 8px; color: var(--text-secondary); font-size: 14px; line-height: 1.5; }
+.options-dark .options-note li { color: rgba(255,255,255,.75); }
+.options-note svg, .options-fit-card svg { flex: 0 0 auto; margin-top: 3px; color: var(--green-primary); }
+.options-table-wrap { overflow-x: auto; margin-top: 32px; border: 1px solid var(--border-green); border-radius: 16px; background: white; }
+.options-table { width: 100%; min-width: 720px; border-collapse: collapse; text-align: left; }
+.options-table th, .options-table td { border-bottom: 1px solid #e8f7ee; padding: 16px; color: var(--text-secondary); font-size: 13px; line-height: 1.5; vertical-align: top; }
+.options-table thead th { background: var(--mint-100); color: var(--green-dark); font-weight: 900; }
+.options-table tbody th { color: #111827; font-weight: 800; }
+.options-fit-card { border: 1px solid var(--border-green); border-radius: 16px; background: white; padding: 24px; }
+.options-fit-card > svg { color: var(--green-primary); }
+.options-fit-card h3 { margin-top: 14px; color: #111827; font-size: 18px; font-weight: 900; }
+.options-router { background: var(--green-deep); }
+.options-router-image { position: relative; min-height: 330px; overflow: hidden; border-radius: 24px; background: #14342a; }
+.options-router h2 { color: white; }
+.options-router p:not(.options-eyebrow) { color: rgba(255,255,255,.72); }
+.options-final-cta h2 { color: white; font-size: clamp(28px, 4vw, 42px); font-weight: 900; letter-spacing: -.04em; }
+.options-final-cta p { margin-top: 12px; color: rgba(255,255,255,.78); line-height: 1.7; }
+@media (min-width: 1024px) { .options-explanation { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 639px) { .package-fibre-card { min-height: 410px; } .options-flow { min-width: 520px; } .options-router-image { min-height: 260px; } }
