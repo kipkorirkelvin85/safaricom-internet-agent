@@ -18,19 +18,20 @@ function SpeedCard({ speed, price }: { speed: string; price: string }) {
   return <div className="promo-speed-card"><div className="promo-speed">{speed}</div><div className="promo-price"><span>KSh</span><strong>{price}</strong></div></div>;
 }
 
-function MarqueeSet() {
-  return <div className="promo-marquee-set">
-    <FiveGProductCard />
-    {fiveGPackages.map(([speed, price]) => <SpeedCard key={speed} speed={speed} price={price} />)}
-  </div>;
+function PackageSet() {
+  return <div className="promo-marquee-set">{fiveGPackages.map(([speed, price]) => <SpeedCard key={speed} speed={speed} price={price} />)}</div>;
 }
 
 export function PromoMarquee() {
   return <section className="promo-marquee" aria-label="5G Home Internet packages">
-    <div className="promo-marquee-track">
-      <MarqueeSet />
-      <div aria-hidden="true" className="shrink-0"><MarqueeSet /></div>
+    <div className="promo-marquee-shell mx-auto max-w-7xl px-5 lg:px-8">
+      <FiveGProductCard />
+      <div className="promo-package-viewport">
+        <div className="promo-marquee-track">
+          <PackageSet />
+          <div aria-hidden="true" className="shrink-0"><PackageSet /></div>
+        </div>
+      </div>
     </div>
   </section>;
 }
-
