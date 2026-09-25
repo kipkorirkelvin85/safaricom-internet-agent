@@ -48,5 +48,5 @@ function FibreCardSet() {
 }
 
 export function FibreMarquee() {
-  return <section id="packages" className="fibre-marquee" aria-label="Home Fibre packages"><div className="mx-auto max-w-7xl px-5 py-8 lg:px-8 lg:py-10"><div className="mb-5"><p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#c4f4d2]">Home Fibre packages</p><p className="mt-1 text-sm text-white/75">Choose the speed that works for your home.</p></div><div className="fibre-marquee-viewport"><div className="fibre-marquee-track"><FibreCardSet /><div aria-hidden="true" className="shrink-0"><FibreCardSet /></div></div></div></div></section>;
+  return <section id="packages" className="fibre-marquee" aria-label="Home Fibre packages"><div className="mx-auto max-w-7xl px-5 py-8 lg:px-8 lg:py-10"><div className="mb-5"><p className="text-xs font-extrabold uppercase tracking-[0.12em] text-[#087a38]">Home Fibre packages</p><p className="mt-1 text-sm font-semibold text-[#4b6357]">Choose the speed that works for your home.</p></div><div className="fibre-marquee-viewport"><div className="fibre-marquee-track"><FibreCardSet /><div aria-hidden="true" className="shrink-0"><FibreCardSet /></div></div></div></div></section>;
 }
